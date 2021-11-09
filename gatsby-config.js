@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    siteUrl: "https://www.yourdomain.tld",
-    title: "abolish-stanford",
+    siteUrl: "http://abolishstanford.github.io",
+    title: "abolish stanford",
   },
   plugins: [
     "gatsby-plugin-sass",
