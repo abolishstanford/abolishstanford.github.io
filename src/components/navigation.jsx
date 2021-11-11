@@ -6,7 +6,7 @@ import { StaticImage } from "gatsby-plugin-image"
 const Navigation = () => {
   return (
     <nav id="navbar">
-      <StaticImage src="../images/logo.png" alt="abolish stanford logo" />
+      <StaticImage id="logo" src="../images/logo.png" alt="abolish stanford logo" />
       <ul>
         <li><a href="./">Home</a></li>
         <li><a href="./">Who We Are</a></li>

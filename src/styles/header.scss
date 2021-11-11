@@ -1,0 +1,14 @@
+#header {
+  padding-top: 120px;
+
+  .page-title {
+    font-family: $header;
+    font-size: 144px;
+    color: $red;
+    -webkit-text-fill-color: $black;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: $red;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+}

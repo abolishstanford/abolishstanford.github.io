@@ -1,7 +1,10 @@
 @import "./styles/variables.scss";
+@import "./styles/navigation.scss";
+@import "./styles/header.scss";
 
-.page-title {
-  font-family: $header;
+html, body {
+  margin: 0;
+  padding: 0;
 }
 
 body {
@@ -12,4 +15,17 @@ body {
 
 p span {
     color: $red;
+}
+
+a {
+  color: $red;
+  text-decoration: none;
+
+  &:hover {
+    border-bottom: 2px solid $red;
+  }
+}
+
+.twitter-feed {
+  text-align: center;
 }
