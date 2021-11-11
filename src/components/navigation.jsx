@@ -1,10 +1,12 @@
 import * as React from "react"
 import "../index.scss"
+import { StaticImage } from "gatsby-plugin-image"
+
 
 const Navigation = () => {
   return (
     <nav id="navbar">
-      <img src="../images/logo.png" alt="abolish stanford logo" />
+      <StaticImage src="../images/logo.png" alt="abolish stanford logo" />
       <ul>
         <li><a href="./">Home</a></li>
         <li><a href="./">Who We Are</a></li>

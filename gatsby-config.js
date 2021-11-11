@@ -4,6 +4,7 @@ module.exports = {
     title: "abolish stanford",
   },
   plugins: [
+    "gatsby-plugin-twitter",
     "gatsby-plugin-sass",
     "gatsby-plugin-image",
     "gatsby-plugin-react-helmet",

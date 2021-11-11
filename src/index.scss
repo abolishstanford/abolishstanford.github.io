@@ -1,6 +1,15 @@
 @import "./styles/variables.scss";
 
+.page-title {
+  font-family: $header;
+}
+
 body {
   background-color: $black;
   color: $white;
+  font-family: $body;
+}
+
+p span {
+    color: $red;
 }
