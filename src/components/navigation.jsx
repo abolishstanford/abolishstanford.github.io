@@ -1,7 +1,6 @@
 import * as React from "react"
-import "../index.scss"
 import { StaticImage } from "gatsby-plugin-image"
-
+import "../sass/main.scss"
 
 const Navigation = () => {
   return (

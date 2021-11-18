@@ -1,0 +1,18 @@
+//fonts
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Space+Grotesk&display=swap');
+$header: 'Montserrat', Helvetica, sans-serif;
+$body: 'Space Grotesk', Courier, monospace;
+
+// colors
+$black: #000000;
+$red: #EB4727;
+$white: #f0f0f0;
+
+// breakpoints
+$tablet: 760px;
+$laptop: 1023px;
+
+// used for consistency in spacing and scaling across devices
+$base: 16px;
+$tablet-scale-factor: 1.125;
+$laptop-scale-factor: 1.25;

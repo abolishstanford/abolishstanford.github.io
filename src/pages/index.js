@@ -1,7 +1,7 @@
 import * as React from "react"
 import Navigation from "../components/navigation.jsx"
 import Header from "../components/header.jsx"
-import "../index.scss"
+import "../sass/main.scss"
 
 const IndexPage = () => {
   return (
