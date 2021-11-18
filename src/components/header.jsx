@@ -1,10 +1,10 @@
 import * as React from "react"
 import "../sass/main.scss"
 
-const Header = () => {
+const Header = (props) => {
   return (
     <div id="header">
-      <h1 className="page-title">abolish stanford</h1>
+      <h1 className="page-title">{props.name}</h1>
     </div>
   )
 }
