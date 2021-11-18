@@ -8,7 +8,7 @@ const IndexPage = () => {
     <main>
       <title>Home Page</title>
       <Navigation />
-      <Header />
+      <Header name="abolish stanford"/>
       <div>
         <p>an autonomous formation fighting for <span>police abolition</span> and <span>total liberation</span> at stanford university and across the peninsula</p>
       </div>
@@ -18,7 +18,6 @@ const IndexPage = () => {
     </main>
   )
 }
-
 
 
 
