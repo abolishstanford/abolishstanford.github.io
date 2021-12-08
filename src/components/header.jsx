@@ -1,11 +1,13 @@
 import * as React from "react"
-import "../sass/main.scss"
+import Navigation from "./navigation.jsx"
 
 const Header = (props) => {
   return (
-    <div id="header">
+    <header className="header">
+      <title>Home Page</title>
+      <Navigation />
       <h1 className="page-title">{props.name}</h1>
-    </div>
+    </header>
   )
 }
 

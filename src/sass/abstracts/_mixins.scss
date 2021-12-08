@@ -1,3 +1,5 @@
+@use "variables" as *;
+
 // Responsive sizing (scales from mobile)
 @mixin scale($property, $mobile-size) {
 	#{$property}: $mobile-size;

@@ -1,16 +1,17 @@
 @use "../abstracts" as *;
 
-#header {
-  padding-top: 120px;
+.header {
+  @include scale(padding-top, 120px);
+}
 
-  .page-title {
-    font-family: $header;
-    font-size: 144px;
-    color: $red;
-    -webkit-text-fill-color: $black;
-    -webkit-text-stroke-width: 2px;
-    -webkit-text-stroke-color: $red;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-  }
+.page-title {
+  font-family: $header;
+  @include responsive(font-size, 54px, 72px, 120px);
+  width: 90%;
+  color: $red;
+  -webkit-text-fill-color: $black;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: $red;
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }

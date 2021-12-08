@@ -1,25 +1,114 @@
 @use "../abstracts" as *;
 
 #navbar {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-between;
-
+  background-color: $black;
+  color: $white;
   position: fixed;
+  top: 0;
+  left: 0;
   box-sizing: border-box;
   width: 100vw;
-  height: 100px;
+  height: 80px;
   padding: 20px;
 
   ul {
-    display: flex;
-    flex-flow: row nowrap;
     list-style-type: none;
     padding: 0;
   }
 
   li {
+    display: inline-block;
     margin: 0 15px;
-    padding: 5px 0;
+    box-sizing: border-box;
+  }
+}
+
+#logo {
+  height: 60px;
+  width: 60px;
+}
+
+#menu {
+  background-color: transparent;
+  border: none;
+  display: none;
+
+  line {
+    stroke: $red;
+    transform-origin: center;
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+@media screen and (max-width: $laptop) {
+  #navbar {
+    ul {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: calc(100vh - 80px);
+      width: 100vw;
+      margin: 80px 0 0 0;
+      visibility: hidden;
+      background-color: $black;
+      opacity: 0;
+      transition: .5s;
+      text-align: center;
+    }
+
+    #menu.menu-toggled + ul {
+      visibility: visible;
+      opacity: 1;
+    }
+
+    li {
+      margin-bottom: 20px;
+    }
+  }
+
+  #navbar
+
+  #menu {
+    display: block;
+  }
+}
+
+@media screen and (min-width: $laptop) {
+  #navbar {
+    height: 100px;
+  }
+}
+
+@media print {
+  #navbar {
+    display: none;
+  }
+}
+
+@supports (display: flex) {
+  #navbar {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+
+    ul {
+      display: flex;
+      flex-flow: row nowrap;
+    }
+  }
+
+  #logo {
+    position: relative;
+    left: auto;
+  }
+
+  @media screen and (max-width: $laptop) {
+    #navbar ul {
+      flex-flow: column nowrap;
+      justify-content: center;
+    }
   }
 }
