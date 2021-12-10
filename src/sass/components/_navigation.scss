@@ -1,40 +1,13 @@
 @use "../abstracts" as *;
 
-#navbar {
-  background-color: $black;
-  color: $white;
-  position: fixed;
-  top: 0;
-  left: 0;
-  box-sizing: border-box;
-  width: 100vw;
-  height: 80px;
-  padding: 20px;
-
-  ul {
-    list-style-type: none;
-    padding: 0;
-  }
-
-  li {
-    display: inline-block;
-    margin: 0 15px;
-    box-sizing: border-box;
-  }
-}
-
-#logo {
-  height: 60px;
-  width: 60px;
+#navbar li {
+  display: inline-block;
 }
 
 #menu {
-  background-color: transparent;
-  border: none;
   display: none;
 
   line {
-    stroke: $red;
     transform-origin: center;
   }
 
@@ -46,42 +19,26 @@
 @media screen and (max-width: $laptop) {
   #navbar {
     ul {
-      position: absolute;
-      top: 0;
-      left: 0;
-      height: calc(100vh - 80px);
-      width: 100vw;
-      margin: 80px 0 0 0;
       visibility: hidden;
-      background-color: $black;
       opacity: 0;
-      transition: .5s;
-      text-align: center;
-    }
-
-    #menu.menu-toggled + ul {
-      visibility: visible;
-      opacity: 1;
     }
 
     li {
-      margin-bottom: 20px;
+      display: block;
     }
   }
 
-  #navbar
-
   #menu {
     display: block;
+
+    &.menu-toggled + ul {
+      visibility: visible;
+      opacity: 1;
+    }
   }
 }
 
-@media screen and (min-width: $laptop) {
-  #navbar {
-    height: 100px;
-  }
-}
-
+// print
 @media print {
   #navbar {
     display: none;
@@ -93,16 +50,12 @@
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
+    align-items: center;
 
     ul {
       display: flex;
       flex-flow: row nowrap;
     }
-  }
-
-  #logo {
-    position: relative;
-    left: auto;
   }
 
   @media screen and (max-width: $laptop) {

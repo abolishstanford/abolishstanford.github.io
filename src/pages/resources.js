@@ -1,14 +1,14 @@
 import * as React from "react"
 import Header from "../components/header.jsx"
 import Footer from "../components/footer.jsx"
-//import "../sass/main.scss"
+import "../sass/main.scss"
 
 const ResourcesPage = () => {
   return (
     <div id="root">
       <Header name="resources"/>
       <main>
-        <div>
+        <div className="container">
           <p>abolition essentials</p>
           <ul>
             <li><a href="https://copsoffcampuscoalition.com/abolition-101/">Abolition 101</a>, Cops Off Campus Coalition</li>

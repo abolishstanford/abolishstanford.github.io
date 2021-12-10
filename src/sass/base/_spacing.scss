@@ -1,0 +1,68 @@
+@use "../abstracts" as *;
+
+// page sections
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  @include scale(padding-top, 120px);
+}
+
+#navbar {
+  @include responsive(padding, 10px, 10px, 20px);
+
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+
+  li {
+    margin: 0 15px;
+  }
+}
+
+main {
+  padding: 5vh 0;
+}
+
+.footer {
+  padding: 10vh 0;
+}
+
+.socials svg {
+  margin-right: 15px;
+}
+
+button {
+  padding: 15px 30px;
+}
+
+input {
+  @include responsive(padding, 0 10px, 0 15px, 0 15px);
+}
+
+input[type="text"] {
+  margin-right: 8px;
+}
+// mobile
+@media screen and (max-width: $laptop) {
+  #navbar {
+    ul {
+      margin-top: 120px;
+    }
+
+    li {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+@supports (display: flex) {
+  @media screen and (max-width: $laptop) {
+    #navbar ul {
+      margin-top: 80px;
+    }
+  }
+}

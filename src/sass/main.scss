@@ -1,2 +1,30 @@
-@use "abstracts" as *;  //please only define mixins and variables in the respective files!
+/*
+'abstracts' contains all the mixins and variables
+*/
+@use "abstracts" as *;
+
+
+/*
+'base' contains styles for:
+  - colors (e.g. background color, text color, border color)
+  - fonts/text (e.g. font family, font size, letter spacing, and line height)
+  - positioning (e.g. position property, top, left, right, bottom)
+  - sizing (e.g. width, height, box sizing)
+  - spacing (e.g. margin, padding)
+  - transitions
+*/
+@use "base";
+
+
+/*
+'components' contains styling for specific features
+*/
 @use "components";
+
+
+// general classes
+.container {
+  margin: auto;
+  width: 80%;
+  max-width: 800px;
+}
