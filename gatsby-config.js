@@ -1,4 +1,5 @@
 module.exports = {
+  pathPrefix: "/live",
   siteMetadata: {
     siteUrl: "http://abolishstanford.github.io",
     title: "abolish stanford",
