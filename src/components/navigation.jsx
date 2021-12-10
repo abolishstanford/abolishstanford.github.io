@@ -33,12 +33,12 @@ const Navigation = () => {
       <a href="./"><StaticImage className="logo" src="../images/logo.png" alt="abolish stanford logo" layout="fixed" width={60} height={60} /></a>
       <Menu />
       <ul>
-        <li><a href="/">Home</a></li>
-        <li><a href="/who-we-are">Who We Are</a></li>
+        <li><a href="./">Home</a></li>
+        <li><a href="./who-we-are">Who We Are</a></li>
         <li><a href="https://drive.google.com/file/d/1HM5-8mnj4ZxOw_etGYFfbg5QIgP5nVeW/view" target="_blank" rel="noreferrer">Our Report</a></li>
-        <li><a href="/resources">Resources</a></li>
-        <li><a href="/gallery">Gallery</a></li>
-        <li><a href="/newsfeed">Newsfeed</a></li>
+        <li><a href="./resources">Resources</a></li>
+        <li><a href="./gallery">Gallery</a></li>
+        <li><a href="./newsfeed">Newsfeed</a></li>
       </ul>
     </nav>
   )
